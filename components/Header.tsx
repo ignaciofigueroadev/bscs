@@ -9,7 +9,7 @@ export function Header() {
     <header className="py-5">
       <nav className="flex items-center justify-between">
         <Bars3Icon className="w-6 h-6" />
-        <Link href={"/"} className="font-bold text-lg">
+        <Link href={"/"} className="font-extrabold text-3xl tracking-wider	">
           BSCS
         </Link>
         <Link href={"/cart"}>
