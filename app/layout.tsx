@@ -1,4 +1,5 @@
-// Components
+// Font
+import { glory } from "@/font/glory";
 
 // Styles
 import "./globals.css";
@@ -17,7 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="container mx-auto max-w-9xl">{children}</body>
+      <body className={`${glory.className} container mx-auto max-w-9xl`}>
+        {children}
+      </body>
     </html>
   );
 }
