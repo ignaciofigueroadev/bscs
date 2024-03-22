@@ -1,18 +1,20 @@
+// Next
 import Link from "next/link";
+
+// Icons
+import { Bars3Icon, ShoppingCartIcon } from "@heroicons/react/24/outline";
 
 export function Header() {
   return (
     <header className="py-5">
-      <nav className="flex items-center justify-around">
-        <div className="flex flex-col gap-1">
-          <div className="h-0.5 w-5 bg-gray-900"></div>
-          <div className="h-0.5 w-5 bg-gray-900"></div>
-          <div className="h-0.5 w-5 bg-gray-900"></div>
-        </div>
+      <nav className="flex items-center justify-between">
+        <Bars3Icon className="w-6 h-6" />
         <Link href={"/"} className="font-bold text-lg">
-          BSSCS
+          BSCS
         </Link>
-        <p>Cart</p>
+        <Link href={"/cart"}>
+          <ShoppingCartIcon className="w-6 h-6" />
+        </Link>
       </nav>
     </header>
   );

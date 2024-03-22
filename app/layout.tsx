@@ -1,5 +1,4 @@
 // Components
-import { Header } from "@/components/Header";
 
 // Styles
 import "./globals.css";
@@ -18,10 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <Header />
-        {children}
-      </body>
+      <body className="container mx-auto max-w-9xl">{children}</body>
     </html>
   );
 }
